@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrosel.css">
+    <link rel="stylesheet" href="linkedin.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
+    </header>
+    <nav id="menu">
+        
+        <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="index.html">Home</a>
+        <a href="index1.html">Ciências Humanas</a>
+        <a href="index2.html">Ciências da Natureza</a>
+        <a href="index3.html">Linguagens</a>
+        <a href="index3.html">Matemática</a>
+        <a href="index3.html">Módulo Integrador</a>
+    
+
+</nav>
+<main id="conteudo">
+    <h1>Vitória Simões</h1>
+    <p>
+
+    </p>
+    <h2>Apresentação</h2>
+    <p>
+
+    </p>
+    <h3>Experiência Profissional</h3>
+    <p>
+        <ul>
+            <li>Babá</li>
+            <li>Auxiliar de confeitaria</li>
+        </ul>
+    </p>
+    <h4>Formação</h4>
+    <p>
+        <ul>
+            <li>Cursando Desinvolvimento de Sisitemas</li>
+            <li>Inglês intermediário</li>
+        </ul>
+    </p>
+        
+</main>
+
+<footer>
+    <div class="conteiner" id="carrosel">
+        <div class="slides">
+            <input type="radio" name='slide' id='slide1'>
+            <input type="radio" name='slide' id='slide2'>
+            <input type="radio" name='slide' id='slide3'>
+            <input type="radio" name='slide' id='slide4'>
+            <input type="radio" name='slide' id='slide5'>
+            <div class="slide s1">
+                <img src="humanas.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="natureza.jpg">
+            </div>
+            <div class="slide">
+                <img src="linguagens.jpg">
+            </div>
+            <div class="slide">
+                <img src="mmatematica.jpg">
+            </div>
+            <div class="slide">
+                <img src="MÓDULO INTEGRADOR (1).jpg">
+            </div>
+        </div>
+    
+        <div class="navigation" id="carrosel">
+            <label class ='bar' for="slide1"></label>
+            <label class ='bar' for="slide2"></label>
+            <label class ='bar' for="slide3"></label>
+            <label class ='bar' for="slide4"></label>
+            <label class ='bar' for="slide5"></label>
+        </div>
+    </div><div class="social-media">
+        <a class="link" href="">Linkedin</a>
+
+    </div>
+
+</footer>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    header{
+        
+        background-color: darkcyan;
+        padding: 10px;
+    }
+    .btn-abrir{
+        color: azure;
+        font-size: 25px;
+    }
+    nav{
+        height: 100%;
+        width: 0px;
+        background-color: darkcyan;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+        transition: width 0.3s;
+    }
+    nav a{
+        color: white;
+        font-size: 25px;
+        display: block;
+        padding: 12px 10px 12px 32px;
+    }
+    nav a:hover{
+        color: darkcyan;
+        background-color: rgb(197, 247, 234);
+    }
+    main{
+        transition: margin-left 0.5s;
+        padding: 15px;
+}
+
+</style>
+<script>
+    function abrirMenu(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('conteudo').style.marginLeft = '250px';
+        document.getElementById('carrosel').style.marginLeft = '250px';
+    }
+    function fecharMenu(){
+        document.getElementById('menu').style.width ='0px';
+        document.getElementById('conteudo').style.marginLeft  = '0px';
+        document.getElementById('carrosel').style.marginLeft = '17px';
+    }
+</script>
+</body>
+</html>
